@@ -68,3 +68,4 @@ go run main.go
 Sentinel-RAG adheres to Microsoft's Responsible AI principles. It employs a Strict-Groundedness policy, 
 ensuring the AI Coach only suggests security remediations verified against official Linux Kernel documentation, 
 preventing harmful or misleading "hallucinations" in critical security contexts.
+​Privacy-First Design: Sentinel-RAG processes kernel telemetry locally via eBPF. Sensitive system data remains within the local environment, ensuring that security audits do not compromise system privacy.
