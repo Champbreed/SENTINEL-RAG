@@ -1,15 +1,16 @@
 # Sentinel-RAG 🛡️💡
 **A Grounded Knowledge Assistant for Auditable Kernel Security & Neurodiverse Accessibility.**
 
-![Sentinel-RAG Demo](tui_final.jpg)
+[![Sentinel-RAG](https://img.shields.io/badge/Sentinel--RAG-Vision--Snapshot-blueviolet)](https://github.com/champbreed/sentinel-rag/raw/main/vision_snapshot.txt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Sentinel-RAG is a specialized accessibility tool designed to reduce cognitive load for individuals—including those with ADHD, autism, and dyslexia—interacting with complex Linux Kernel telemetry. Built for the **Microsoft Neurodiversity Challenge**, it leverages Python-driven Machine Learning to transform dense, high-anxiety technical data into structured, calm, and actionable insights.
 
 ## 🧠 Features for Neurodiversity
 - **Cognitive Load Reduction:** Uses Python logic to parse raw eBPF logs into a structured, distraction-free TUI (Terminal User Interface).
 - **MLT-Driven Cognitive Compression:** Our Python backend (`rai_audit.py`) uses Machine Learning Text (MLT) logic to dynamically adjust information density. This prevents **"Analysis Paralysis"** by allowing users to choose the depth of information that matches their current cognitive energy.
-    - **Level 0 (Technical):** Full breakdown of 7+ security targets (e.g., `capabilities.7`, `bpf.2`).
-    - **Level 2 (Summarized):** Intelligent compression into a single "SYSTEM SUMMARY" to prevent information overload.
+- **Level 0 (Technical):** Full breakdown of 7+ security targets (e.g., `capabilities.7`, `bpf.2`).
+- **Level 2 (Summarized):** Intelligent compression into a single "SYSTEM SUMMARY" to prevent information overload.
 - **Grounded Remediation Hints:** Provides non-anxiety-inducing, step-by-step tasks to fix non-compliance issues.
 - **Visual Focus Zones:** Dedicated spatial areas for Vision, Kernel Monitoring, and AI Coaching to prevent sensory overwhelm.
 
@@ -31,30 +32,39 @@ Follow these steps to set up the **Sentinel-RAG** environment on your local mach
 ### ⚙️ Installation & Setup
 
 1. **Clone the Repository**
-   ```bash
-   git clone [https://github.com/champbreed/sentinel-rag.git](https://github.com/champbreed/sentinel-rag.git)
-   cd sentinel-rag
-Configure Python Environment
-Initialize the virtual environment to isolate Machine Learning dependencies.
-
-Bash
+```bash
+git clone [https://github.com/champbreed/sentinel-rag.git](https://github.com/champbreed/sentinel-rag.git)
+cd sentinel-rag
+ ```
+2. **Configure Python Environment**
+- Initialize the virtual environment to isolate Machine Learning dependencies.
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 pip install pandas responsibleai
-Verify MLT Compression Engine
-Ensure the Python backend is correctly simplifying technical data.
-
-Bash
-# View detailed technical audit (Level 0)
+```
+- Inspect the RAI audit logic and groundness scoring (use nano, vim, or cat)
+```bash
+nano scripts/rai_audit.py
+```
+3. **Verify MLT Compression Engine**
+- View detailed technical audit (Level 0)
+```bash
 python3 scripts/rai_audit.py --level 0
-
-# View AI-compressed system summary (Level 2)
+```
+- View AI-compressed system summary (Level 2)
+```bash
 python3 scripts/rai_audit.py --level 2
-Launch the Accessibility TUI
-Start the interactive Go-based interface.
+```
 
-Bash
+4. **Launch the Accessibility TUI**
+- Start the interactive Go-based interface.
+```bash
 go run main.go
+```
 🛡️ Safety & Ethics
-Sentinel-RAG adheres to Microsoft's Responsible AI principles. It employs a Strict-Groundedness policy, ensuring the AI Coach only suggests security remediations verified against official Linux Kernel documentation, preventing harmful or misleading "hallucinations" in critical security contexts.
+
+Sentinel-RAG adheres to Microsoft's Responsible AI principles. It employs a Strict-Groundedness policy, 
+ensuring the AI Coach only suggests security remediations verified against official Linux Kernel documentation, 
+preventing harmful or misleading "hallucinations" in critical security contexts.
