@@ -1,7 +1,7 @@
 # Sentinel-RAG 🛡️💡
 **A Grounded Knowledge Assistant for Auditable Kernel Security & Neurodiverse Accessibility.**
 
-![Sentinel-RAG Demo](https://github.com/champbreed/sentinel-rag/raw/main/vision_snapshot.txt)
+![Sentinel-RAG Demo](tui_final.jpg)
 
 Sentinel-RAG is a specialized accessibility tool designed to reduce cognitive load for individuals—including those with ADHD, autism, and dyslexia—interacting with complex Linux Kernel telemetry. Built for the **Microsoft Neurodiversity Challenge**, it leverages Python-driven Machine Learning to transform dense, high-anxiety technical data into structured, calm, and actionable insights.
 
