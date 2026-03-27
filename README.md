@@ -9,7 +9,7 @@ Sentinel-RAG is a specialized accessibility tool designed to reduce cognitive lo
 ## 🧠 Features for Neurodiversity
 - **Cognitive Load Reduction:** Uses Python logic to parse raw eBPF logs into a structured, distraction-free TUI (Terminal User Interface).
 - **MLT-Driven Cognitive Compression:** Our Python backend (`rai_audit.py`) uses Machine Learning Text (MLT) logic to dynamically adjust information density. This prevents **"Analysis Paralysis"** by allowing users to choose the depth of information that matches their current cognitive energy.
-- **Level 0 (Technical):** Full breakdown of 7+ security targets (e.g., `capabilities.7`, `bpf.2`).
+- **Level 0 (Technical):** Full breakdown of 7+ security targets (such as: `capabilities.7`, `bpf.2`).
 - **Level 2 (Summarized):** Intelligent compression into a single "SYSTEM SUMMARY" to prevent information overload.
 - **Grounded Remediation Hints:** Provides non-anxiety-inducing, step-by-step tasks to fix non-compliance issues.
 - **Visual Focus Zones:** Dedicated spatial areas for Vision, Kernel Monitoring, and AI Coaching to prevent sensory overwhelm.
